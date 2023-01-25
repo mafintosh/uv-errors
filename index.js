@@ -1,5 +1,5 @@
-if (process.UV_ERRORS) {
-  module.exports = process.UV_ERRORS
+if (process.errnos || process.UV_ERRORS) {
+  module.exports = process.errnos || process.UV_ERRORS
 } else {
   module.exports = requireMap()
 }
