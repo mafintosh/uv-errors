@@ -1,6 +1,6 @@
 {
   "name": "uv-errors",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get the UV error map in different ways",
   "main": "index.js",
   "browser": "./browser.js",
