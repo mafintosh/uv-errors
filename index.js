@@ -6,8 +6,7 @@ if (process.errnos || process.UV_ERRORS) {
 
 function requireMap () {
   try {
-    // just avoid inlining util with some bundlers
-    const loadUtil = require.bind(null, 'util')
+    const loadUtil = require('util')
     return loadUtil().getSystemErrorMap()
   } catch {
     return new Map()
