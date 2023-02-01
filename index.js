@@ -6,8 +6,8 @@ if (process.errnos || process.UV_ERRORS) {
 
 function requireMap () {
   try {
-    const loadUtil = require('util')
-    return loadUtil().getSystemErrorMap()
+    const util = require('util')
+    return util.getSystemErrorMap()
   } catch {
     return new Map()
   }
